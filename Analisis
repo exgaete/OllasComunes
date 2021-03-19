@@ -1,0 +1,642 @@
+clear all
+set more off
+set autotabgraph on, perm
+
+cd "C:\Users\exgae\OneDrive\2019_UPC\Proyecto_Final\03 data\independiente_fuentes\Censo\Censo2017_ManzanaEntidad_CSV\Censo2017_16R_ManzanaEntidad_CSV"
+
+clear
+import delimited "Censo2017_Manzanas.csv"
+format %18.0g id_manzent
+save censo2017_MZNA_00.dta, replace
+
+tab region
+drop if region != 13
+
+*Missing data
+destring hombres, replace ignore(*)
+destring mujeres, replace ignore(*)
+destring edad_0a5, replace ignore(*)
+destring edad_6a14, replace ignore(*)
+destring edad_15a64, replace ignore(*)
+destring edad_65ymas, replace ignore(*)
+destring inmigrantes, replace ignore(*)
+destring pueblo, replace ignore(*)
+
+*A partir de lo indicado en Anexo 3
+
+*Población por Manzana
+g pob = personas
+
+*Mujeres por Manzana
+g muj = mujeres
+
+*Tasa Mujeres / Manzana
+g t_muj = (muj / pob)*100
+
+*Niños y niñas
+g ninos = edad_0a5 + edad_6a14
+
+*Adultos Mayores (mayores de 64 años)
+g adma = edad_65ymas
+
+*Tasa dependencia (Ninos y Adultos Mayores)
+g t_dep = ((ninos+adma)/pob)*100
+
+*Población Migrante internacional
+g mig = inmigrantes
+
+*Tasa población migrante
+g t_mig = (mig/pob)*100
+
+*Poblacion perteneciente a Pueblos Originarios
+g puor = pueblo
+
+*Tasa de Poblacion perteneciente a Pueblos Originarios
+g t_puor = (puor/pob)*100
+
+*Cantidad de viviendas (particulares y colectivas)
+g viv = total_viv
+
+*Cantidad de hogares
+g hog = cant_hog
+
+preserve
+save censo2017_MZNA_01.dta, replace
+keep id_manzent pob muj t_muj ninos adma t_dep mig t_mig puor t_puor viv hog
+export delimited using "c17_mzna.csv", replace
+
+restore
+
+egen c_pob = sum(pob), by(comuna)
+egen c_viv = sum(viv), by(comuna)
+egen c_hog = sum(hog), by(comuna)
+egen c_mig = sum(mig), by(comuna)
+egen c_puor = sum(puor), by(comuna)
+g tc_mig = c_mig / c_pob
+g tc_puor = c_puor / c_pob
+
+keep comuna c_pob c_viv c_hog c_mig c_puor tc_mig tc_puor 
+duplicates drop
+
+rename comuna com_cod
+g com_name="."
+
+replace com_name="Cerrillos" if com_cod==13102
+replace com_name="Cerro Navia" if com_cod==13103
+replace com_name="Conchali" if com_cod==13104
+replace com_name="El Bosque" if com_cod==13105
+replace com_name="Estacion Central" if com_cod==13106
+replace com_name="Huechuraba" if com_cod==13107
+replace com_name="Independencia" if com_cod==13108
+replace com_name="La Cisterna" if com_cod==13109
+replace com_name="La Florida" if com_cod==13110
+replace com_name="La Granja" if com_cod==13111
+replace com_name="La Pintana" if com_cod==13112
+replace com_name="La Reina" if com_cod==13113
+replace com_name="Las Condes" if com_cod==13114
+replace com_name="Lo Barnechea" if com_cod==13115
+replace com_name="Lo Espejo" if com_cod==13116
+replace com_name="Lo Prado" if com_cod==13117
+replace com_name="Macul" if com_cod==13118
+replace com_name="Maipu" if com_cod==13119
+replace com_name="Ñuñoa" if com_cod==13120
+replace com_name="Pedro Aguirre Cerda" if com_cod==13121
+replace com_name="Peñalolen" if com_cod==13122
+replace com_name="Providencia" if com_cod==13123
+replace com_name="Pudahuel" if com_cod==13124
+replace com_name="Puente Alto" if com_cod==13201
+replace com_name="Quilicura" if com_cod==13125
+replace com_name="Quinta Normal" if com_cod==13126
+replace com_name="Recoleta" if com_cod==13127
+replace com_name="Renca" if com_cod==13128
+replace com_name="San Bernardo" if com_cod==13401
+replace com_name="San Joaquin" if com_cod==13129
+replace com_name="San Miguel" if com_cod==13130
+replace com_name="San Ramon" if com_cod==13131
+replace com_name="Santiago" if com_cod==13101
+replace com_name="Vitacura" if com_cod==13132
+
+save data_comunal.dta, replace
+export delimited using "data_comunal_censo.csv", replace
+
+use censo2017_MZNA_01.dta, clear
+g com_name="."
+
+replace com_name="Cerrillos" if comuna==13102
+replace com_name="Cerro Navia" if comuna==13103
+replace com_name="Conchali" if comuna==13104
+replace com_name="El Bosque" if comuna==13105
+replace com_name="Estacion Central" if comuna==13106
+replace com_name="Huechuraba" if comuna==13107
+replace com_name="Independencia" if comuna==13108
+replace com_name="La Cisterna" if comuna==13109
+replace com_name="La Florida" if comuna==13110
+replace com_name="La Granja" if comuna==13111
+replace com_name="La Pintana" if comuna==13112
+replace com_name="La Reina" if comuna==13113
+replace com_name="Las Condes" if comuna==13114
+replace com_name="Lo Barnechea" if comuna==13115
+replace com_name="Lo Espejo" if comuna==13116
+replace com_name="Lo Prado" if comuna==13117
+replace com_name="Macul" if comuna==13118
+replace com_name="Maipu" if comuna==13119
+replace com_name="Ñuñoa" if comuna==13120
+replace com_name="Pedro Aguirre Cerda" if comuna==13121
+replace com_name="Peñalolen" if comuna==13122
+replace com_name="Providencia" if comuna==13123
+replace com_name="Pudahuel" if comuna==13124
+replace com_name="Puente Alto" if comuna==13201
+replace com_name="Quilicura" if comuna==13125
+replace com_name="Quinta Normal" if comuna==13126
+replace com_name="Recoleta" if comuna==13127
+replace com_name="Renca" if comuna==13128
+replace com_name="San Bernardo" if comuna==13401
+replace com_name="San Joaquin" if comuna==13129
+replace com_name="San Miguel" if comuna==13130
+replace com_name="San Ramon" if comuna==13131
+replace com_name="Santiago" if comuna==13101
+replace com_name="Vitacura" if comuna==13132
+
+drop if com_name=="."
+egen tams_pob = sum(pob)
+egen tams_muj = sum(muj)
+egen tams_dep = sum((ninos+adma))
+egen tams_mig = sum(mig)
+egen tams_puor = sum(puor)
+
+g pams_muj= (tams_muj / tams_pob)*100
+g pams_dep= (tams_dep / tams_pob)*100
+g pams_mig= (tams_mig / tams_pob)*100
+g pams_puor= (tams_puor / tams_pob)*100
+
+keep tams* pams*
+duplicates drop
+list pams*
+
+*pams_muj=51.52
+*pams_dep=25.48
+*pams_mig=7.04
+*pams_puor=9.74
+
+
+
+clear
+import delimited "MZNA_entorno200.csv"
+format %18.0g manzent_i
+rename manzent_i id_manzent
+save MZNA_entorno200.dta, replace
+
+use censo2017_MZNA_01.dta, clear
+
+merge 1:1 id_manzent using "MZNA_entorno200.dta"
+tab _merge
+drop dc area zc_loc mz_ent id_zona_loc
+drop hombres mujeres edad_0a5 edad_6a14 edad_15a64 edad_65ymas inmigrantes pueblo viv_part viv_col vpomp
+drop total_viv cant_hog p01_1 p01_2 p01_3 p01_4 p01_5 p01_6 p01_7 p03a_1 p03a_2 p03a_3 p03a_4 p03a_5 p03a_6 p03b_1 p03b_2 p03b_3 p03b_4 p03b_5 p03b_6 p03b_7 p03c_1 p03c_2 p03c_3 p03c_4 p03c_5 matacep matrec matirrec p05_1 p05_2 p05_3 p05_4
+drop region_15r provincia_15r comuna_15r id_manzent_15r
+drop fid nom_region nom_provin
+drop distrito loc_zon ent_man categoria nom_catego
+drop shape_leng
+drop if _merge==1
+tab _merge
+drop _merge
+
+save MZNAv02_entorno200.dta, replace
+drop if comuna==13202
+drop if comuna==13604
+drop if comuna==13203
+
+replace nom_comuna="Santiago" if nom_comuna=="SANTIAGO"
+replace nom_comuna="Cerrillos" if nom_comuna=="CERRILLOS"
+replace nom_comuna="Cerro Navia" if nom_comuna=="CERRO NAVIA"
+replace nom_comuna="Conchalí" if nom_comuna=="CONCHALÃ"
+replace nom_comuna="El Bosque" if nom_comuna=="EL BOSQUE"
+replace nom_comuna="Estación Central" if nom_comuna=="ESTACIÃN CENTRAL"
+replace nom_comuna="Huechuraba" if nom_comuna=="HUECHURABA"
+replace nom_comuna="Independencia" if nom_comuna=="INDEPENDENCIA"
+replace nom_comuna="La Cisterna" if nom_comuna=="LA CISTERNA"
+replace nom_comuna="La Florida" if nom_comuna=="LA FLORIDA"
+replace nom_comuna="La Granja" if nom_comuna=="LA GRANJA"
+replace nom_comuna="La Pintana" if nom_comuna=="LA PINTANA"
+replace nom_comuna="La Reina" if nom_comuna=="LA REINA"
+replace nom_comuna="Las Condes" if nom_comuna=="LAS CONDES"
+replace nom_comuna="Lo Barnechea" if nom_comuna=="LO BARNECHEA"
+replace nom_comuna="Lo Espejo" if nom_comuna=="LO ESPEJO"
+replace nom_comuna="Lo Prado" if nom_comuna=="LO PRADO"
+replace nom_comuna="Macul" if nom_comuna=="MACUL"
+replace nom_comuna="Maipú" if nom_comuna=="MAIPÃ"
+replace nom_comuna="Ñuñoa" if nom_comuna=="ÃUÃOA"
+replace nom_comuna="Pedro Aguirre Cerda" if nom_comuna=="PEDRO AGUIRRE CERDA"
+replace nom_comuna="Peñalolén" if nom_comuna=="PEÃALOLÃN"
+replace nom_comuna="Providencia" if nom_comuna=="PROVIDENCIA"
+replace nom_comuna="Pudahuel" if nom_comuna=="PUDAHUEL"
+replace nom_comuna="Quilicura" if nom_comuna=="QUILICURA"
+replace nom_comuna="Quinta Normal" if nom_comuna=="QUINTA NORMAL"
+replace nom_comuna="Recoleta" if nom_comuna=="RECOLETA"
+replace nom_comuna="Renca" if nom_comuna=="RENCA"
+replace nom_comuna="San Joaquín" if nom_comuna=="SAN JOAQUÃN"
+replace nom_comuna="San Miguel" if nom_comuna=="SAN MIGUEL"
+replace nom_comuna="San Ramón" if nom_comuna=="SAN RAMÃN"
+replace nom_comuna="Vitacura" if nom_comuna=="VITACURA"
+replace nom_comuna="Puente Alto" if nom_comuna=="PUENTE ALTO"
+replace nom_comuna="San Bernardo" if nom_comuna=="SAN BERNARDO"
+
+egen tc_pob =sum(pob), by(comuna)
+egen tpc_muj = mean(t_muj), by(comuna)
+egen tpc_dep = mean(t_dep), by(comuna)
+egen tpc_mig = mean(t_mig), by(comuna)
+egen tpc_puor = mean(t_puor), by(comuna)
+
+egen tc_pob_e = sum(pob), by(comuna contornosi)
+egen tpc_muj_e =mean(t_muj), by(comuna contornosi)
+egen tpc_dep_e =mean(t_dep), by(comuna contornosi)
+egen tpc_mig_e =mean(t_mig), by(comuna contornosi)
+egen tpc_puor_e =mean(t_puor), by(comuna contornosi)
+
+save MZNAv03_entorno200.dta, replace
+
+clear
+*Generación y Merge de data del RSH x MZNA
+
+import delimited "Tramo00-40.csv", varnames(1) encoding(UTF-8)
+format %18.0g manzent_i
+rename manzent_i id_manzent
+rename predicted t00_40est
+rename stderror t00_40stde
+drop fid objectid fid_1 region nom_region provincia nom_provin
+drop distrito loc_zon ent_man categoria nom_catego
+drop included
+save MZNA_RSH_Tramo00-40.dta, replace
+
+clear
+
+import delimited "Tramo00-60.csv", varnames(1) encoding(UTF-8) 
+format %18.0g manzent_i
+rename manzent_i id_manzent
+rename predicted t00_60est
+rename stderror t00_60stde
+drop  fid_1 region nom_region provincia nom_provin
+drop distrito loc_zon ent_man categoria nom_catego
+drop included
+save MZNA_RSH_Tramo00-60.dta, replace
+
+clear
+
+import delimited "Tramo00-80.csv", varnames(1) encoding(UTF-8) 
+format %18.0g manzent_i
+rename manzent_i id_manzent
+rename predicted t00_80est
+rename stderror t00_80stde
+drop fid fid_1 region nom_region provincia nom_provin
+drop distrito loc_zon ent_man categoria nom_catego
+drop included
+save MZNA_RSH_Tramo00-80.dta, replace
+
+clear
+
+use MZNA_RSH_Tramo00-40.dta, clear
+
+merge 1:1 id_manzent using "MZNA_RSH_Tramo00-60.dta"
+drop _merge
+
+merge 1:1 id_manzent using "MZNA_RSH_Tramo00-80.dta"
+drop _merge
+
+drop if comuna==13202
+drop if comuna==13203
+drop if comuna==13604
+
+g aux1 =1
+egen MZNAn = sum(aux1), by(comuna)
+egen MZNAnxc_e = sum(aux1), by(comuna contornosi) 
+
+egen tpc_t00_40 = mean (t00_40est), by(comuna)
+egen tpc_t00_60 = mean (t00_60est), by(comuna)
+egen tpc_t00_80 = mean (t00_80est), by(comuna)
+
+egen tpc_t00_40_e =mean(t00_40est), by(comuna contornosi)
+egen tpc_t00_60_e =mean(t00_60est), by(comuna contornosi)
+egen tpc_t00_80_e =mean(t00_80est), by(comuna contornosi)
+
+save MZNA_RSH_3Tramos.dta, replace
+
+use MZNAv03_entorno200.dta, clear
+merge 1:1 id_manzent using "MZNA_RSH_3Tramos.dta"
+drop _merge
+
+keep comuna nom_comuna tc_pob tc_pob_e MZNAn MZNAnxc_e contornosi tpc_muj tpc_dep tpc_mig tpc_puor tpc_t00_40 tpc_t00_60 tpc_t00_80 tpc_muj_e tpc_dep_e tpc_mig_e tpc_puor_e tpc_t00_40_e tpc_t00_60_e tpc_t00_80_e 
+duplicates drop
+
+reshape wide tc_pob_e MZNAnxc_e tpc_muj_e tpc_dep_e tpc_mig_e tpc_puor_e tpc_t00_40_e tpc_t00_60_e tpc_t00_80_e, i(comuna) j(contornosi)
+
+label variable tc_pob_e0 "Población Total - Zonas Externas"
+label variable tc_pob_e1 "Población Total - Entornos"
+
+label variable MZNAnxc_e0 "Número de Manzanas - Zonas Externas"
+label variable MZNAnxc_e1 "Número de Manzanas - Entornos"
+
+label variable tpc_muj_e0 "Tasa de Mujeres - Zonas Externas"
+label variable tpc_muj_e1 "Tasa de Mujeres - Entornos"
+
+label variable tpc_dep_e0 "Tasa de Dependencia - Zonas Externas"
+label variable tpc_dep_e1 "Tasa de Dependencia - Entornos"
+
+label variable tpc_mig_e0 "Tasa de Migrantes - Zonas Externas"
+label variable tpc_mig_e1 "Tasa de Migrantes - Entornos"
+
+label variable tpc_puor_e0 "Identificación a Pueblos Originarios - Zonas Externas"
+label variable tpc_puor_e1 "Identificación a Pueblos Originarios - Entornos"
+
+label variable tpc_t00_40_e0 "Tasa de Calificación 40% más vulnerable - Zonas Externas"
+label variable tpc_t00_40_e1 "Tasa de Calificación 40% más vulnerable - Entornos"
+
+label variable tpc_t00_60_e0 "Tasa de Calificación 60% más vulnerable - Zonas Externas"
+label variable tpc_t00_60_e1 "Tasa de Calificación 60% más vulnerable - Entornos"
+
+label variable tpc_t00_80_e0 "Tasa de Calificación 80% más vulnerable - Zonas Externas"
+label variable tpc_t00_80_e1 "Tasa de Calificación 80% más vulnerable - Entornos"
+
+g tc_pob_porc = (tc_pob_e1 / tc_pob)*100
+g tpc_MZNA_porc = (MZNAnxc_e1 / MZNAn)*100
+g tc_POBdif = tc_pob_e1 - tc_pob_e0
+g tpc_MZNAdif = MZNAnxc_e1 - MZNAnxc_e0
+g tpc_muj_dif = tpc_muj_e1 - tpc_muj_e0
+g tpc_dep_dif = tpc_dep_e1 - tpc_dep_e0
+g tpc_mig_dif = tpc_mig_e1 - tpc_mig_e0
+g tpc_puor_dif = tpc_puor_e1 - tpc_puor_e0
+g tpc_t00_40dif = tpc_t00_40_e1 - tpc_t00_40_e0
+g tpc_t00_60dif = tpc_t00_60_e1 - tpc_t00_60_e0
+g tpc_t00_80dif = tpc_t00_80_e1 - tpc_t00_80_e0
+
+save dataof_01.dta, replace
+use dataof_01.dta, clear
+
+***MANZANAS.
+
+graph bar (sum) MZNAnxc_e0 MZNAnxc_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%9,0gc)) ylabel(, labsize(small) angle(horizontal) format(%9,0gc)) ///
+legend(order(1 "Número de manzanas a más de 200 mts." 2 "Número de manzanas a menos de 200 mts.") cols(1)) ///
+name(MZNAAMSU, replace)
+graph export "000MZNAAMSU.png", as(png) name("MZNAAMSU") replace
+
+graph dot (sum) MZNAnxc_e0 MZNAnxc_e1, ///
+over(nom_comuna, label(labsize(tiny))) ylabel(, format(%9,0gc)) ///
+marker(1, mcolor(dknavy) msymbol(circle_hollow)) marker(2, mcolor(cranberry) msymbol(circle)) legend(order(1 "Número Comunal de Manzanas - Fuera de Entornos" 2 "Número Comunal de Manzanas - Interior de Entornos") cols(1)) ///
+name(Manzanas, replace)
+graph export "001Manzanas.png", as(png) name("Manzanas") replace
+
+graph hbar (mean) tpc_MZNAdif, over(nom_comuna, sort(tpc_MZNAdif) label(labsize(tiny))) ///
+ylabel(, format(%9,0gc)) name(Manzanas_Dif, replace)
+graph export "002Manzanas_Dif.png", as(png) name("Manzanas_Dif") replace
+
+graph hbar (mean) tpc_MZNA_porc, over(nom_comuna, sort(tpc_MZNA_porc) label(labsize(tiny))) blabel(bar, size(vsmall) format(%5,4g)) name(Manzanas_Porc, replace)
+graph export "003Manzanas_Porc.png", as(png) name("Manzanas_Porc") replace
+
+***Población.
+
+graph bar (sum) tc_pob_e0 tc_pob_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%12,0gc)) ylabel(, labsize(small) angle(horizontal) format(%12,0gc)) ///
+legend(order(1 "Población residente en manzanas a más de 200 mts." 2 "Población residente en manzanas a menos de 200 mts.") cols(1)) ///
+name(POBAMSU, replace)
+graph export "050POBAMSU.png", as(png) name("POBAMSU") replace
+
+graph dot (sum) tc_pob_e0 tc_pob_e1, ///
+over(nom_comuna, label(labsize(tiny))) ylabel(, format(%9,0gc)) ///
+marker(1, mcolor(dknavy) msymbol(circle_hollow)) marker(2, mcolor(cranberry) msymbol(circle)) legend(order(1 "Población total en Manzanas - Fuera de Entornos" 2 "Población total en Manzanas - Interior de Entornos") cols(1)) ///
+name(POB, replace)
+graph export "051POB.png", as(png) name("POB") replace
+
+graph hbar (mean) tc_POBdif, over(nom_comuna, sort(tc_POBdif) label(labsize(tiny))) ///
+ylabel(, labsize(small) angle(horizontal) format(%12,0gc)) ///
+name(POB_Dif, replace)
+graph export "052POB_Dif.png", as(png) name("POB_Dif") replace
+
+graph hbar (mean) tc_pob_porc, over(nom_comuna, sort(tc_pob_porc) label(labsize(vsmall))) blabel(bar, size(vsmall) format(%5,4g)) ylabel(, labsize(vsmall)) name(POB_Porc, replace)
+graph export "053POB_Porc.png", as(png) name("POB_Porc") replace
+
+***Mujeres.
+
+graph bar (mean) tpc_muj_e0 tpc_muj_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%6,3g)) yline(51.58, lwidth(thin) lpattern(dash) lcolor(lavender)) /// 
+yscale(range(0 100)) ylabel(20 40 60 80 100) ///
+legend(order(1 "Tasa de mujeres en manzanas a más de 200 mts." 2 "Tasa de mujeres en manzanas a menos de 200 mts.") cols(1)) ///
+name(MujAMSU, replace)
+graph export "100MujAMSU.png", as(png) name("MujAMSU") replace
+
+graph dot (mean) tpc_muj tpc_muj_e0 tpc_muj_e1, ///
+over(nom_comuna, sort(tpc_muj) label(labsize(tiny))) ///
+marker(1, msymbol(smx)) marker(2, mcolor(dknavy) msymbol(circle_hollow)) marker(3, mcolor(cranberry) msymbol(circle)) yline(51.58, lwidth(thin) lpattern(dash) lcolor(lavender)) legend(order(1 "Promedio Comunal" 2 "Tasa Comunal - Fuera de Entornos" 3 "Tasa Comunal - Interior de Entornos") cols(1)) ///
+name(Mujeres, replace)
+graph export "101Mujeres.png", as(png) name("Mujeres") replace
+
+graph hbar (mean) tpc_muj_dif, over(nom_comuna, sort(tpc_muj_dif) label(labsize(tiny))) ///
+name(Mujeres_Dif, replace)
+graph export "102Mujeres_Dif.png", as(png) name("Mujeres_Dif") replace
+
+twoway (scatter tpc_muj_dif tpc_muj, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(0) xline(51.58, lwidth(thin) lpattern(dash) lcolor(lavender)) name(MujeresDifRel, replace)
+graph export "103MujeresDifRel.png", as(png) name("MujeresDifRel") replace
+
+twoway (scatter tpc_muj_e0 tpc_muj_e1, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(51.58, lwidth(thin) lpattern(dash) lcolor(lavender)) xline(51.58, lwidth(thin) lpattern(dash) lcolor(lavender)) /// 
+xscale(range(50 57)) xlabel(50 52 54 56) yscale(range(50 57)) ylabel(50 52 54 56) ///
+name(MujeresDifDif, replace)
+graph export "104MujeresDifDif.png", as(png) name("MujeresDifDif") replace
+
+
+***Tasa de Dependencia.
+
+graph bar (mean) tpc_dep_e0 tpc_dep_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%6,3g)) yline(32.2, lwidth(thin) lpattern(dash) lcolor(lavender)) ///
+yscale(range(0 100)) ylabel(20 40 60 80 100) ///
+legend(order(1 "Tasa de dependencia en manzanas a más de 200 mts." 2 "Tasa de dependencia en manzanas a menos de 200 mts.") cols(1)) ///
+name(DepAMSU, replace)
+graph export "200DepAMSU.png", as(png) name("DepAMSU") replace
+
+graph dot (mean) tpc_dep tpc_dep_e0 tpc_dep_e1, ///
+over(nom_comuna, sort(tpc_dep) label(labsize(tiny))) ///
+marker(1, msymbol(smx)) marker(2, mcolor(dknavy) msymbol(circle_hollow)) marker(3, mcolor(cranberry) msymbol(circle)) yline(32.2, lwidth(thin) lpattern(dash) lcolor(lavender)) legend(order(1 "Promedio Comunal" 2 "Tasa Comunal - Fuera de Entornos" 3 "Tasa Comunal - Interior de Entornos") cols(1)) ///
+name(Dependencia, replace)
+graph export "201Dependencia.png", as(png) name("Dependencia") replace
+
+graph hbar (mean) tpc_dep_dif, over(nom_comuna, sort(tpc_dep_dif) label(labsize(tiny))) ///
+name(Dependencia_Dif, replace)
+graph export "202Dependencia_Dif.png", as(png) name("Dependencia_Dif") replace
+
+twoway (scatter tpc_dep_dif tpc_dep, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(0) xline(32.2, lwidth(thin) lpattern(dash) lcolor(lavender)) name(DependenciaDifRel, replace)
+graph export "203DependenciaDifRel.png", as(png) name("DependenciaDifRel") replace
+
+twoway (scatter tpc_dep_e0 tpc_dep_e1, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(32.2, lwidth(thin) lpattern(dash) lcolor(lavender)) xline(32.2, lwidth(thin) lpattern(dash) lcolor(lavender)) /// 
+xscale(range(20 45)) xlabel(25 30 35 40 45) yscale(range(20 45)) ylabel(25 30 35 40 45) ///
+name(DependenciaDifDif, replace)
+graph export "204DependenciaDifDif.png", as(png) name("DependenciaDifDif") replace
+
+***Migrantes.
+
+graph bar (mean) tpc_mig_e0 tpc_mig_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%6,3g)) yline(7.4, lwidth(thin) lpattern(dash) lcolor(lavender)) ///
+yscale(range(0 100)) ylabel(20 40 60 80 100) ///
+legend(order(1 "Tasa de inmigrantes en manzanas a más de 200 mts." 2 "Tasa de inmigrantes en manzanas a menos de 200 mts.") cols(1)) ///
+name(MigAMSU, replace)
+graph export "300MigAMSU.png", as(png) name("MigAMSU") replace
+
+graph dot (mean) tpc_mig tpc_mig_e0 tpc_mig_e1, ///
+over(nom_comuna, sort(tpc_mig) label(labsize(tiny))) ///
+marker(1, msymbol(smx)) marker(2, mcolor(dknavy) msymbol(circle_hollow)) marker(3, mcolor(cranberry) msymbol(circle)) yline(7.4, lwidth(thin) lpattern(dash) lcolor(lavender)) legend(order(1 "Promedio Comunal" 2 "Tasa Comunal - Fuera de Entornos" 3 "Tasa Comunal - Interior de Entornos") cols(1)) ///
+name(Migrantes, replace)
+graph export "301Migrantes.png", as(png) name("Migrantes") replace
+
+graph hbar (mean) tpc_mig_dif, over(nom_comuna, sort(tpc_mig_dif) label(labsize(tiny))) ///
+name(Migrantes_Dif, replace)
+graph export "302Migrantes_Dif.png", as(png) name("Migrantes_Dif") replace
+
+twoway (scatter tpc_mig_dif tpc_mig, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(0) xline(7.4, lwidth(thin) lpattern(dash) lcolor(lavender)) name(MigrantesDifRel, replace)
+graph export "303MigrantesDifRel.png", as(png) name("MigrantesDifRel") replace
+
+twoway (scatter tpc_mig_e0 tpc_mig_e1, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(7.4, lwidth(thin) lpattern(dash) lcolor(lavender)) xline(7.4, lwidth(thin) lpattern(dash) lcolor(lavender)) /// 
+xscale(range(0 30)) xlabel(5 10 15 20 25 30) yscale(range(0 30)) ylabel(5 10 15 20 25 30) ///
+name(MigrantesDifDif, replace)
+graph export "304MigrantesDifDif.png", as(png) name("MigrantesDifDif") replace
+
+***Pueblos Originarios.
+
+graph bar (mean) tpc_puor_e0 tpc_puor_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%6,3g)) yline(11.16, lwidth(thin) lpattern(dash) lcolor(lavender)) ///
+yscale(range(0 100)) ylabel(20 40 60 80 100) ///
+legend(order(1 "Tasa de Pob. Pueblos Originarios en manzanas a más de 200 mts." 2 "Tasa de Pob. Pueblos Originarios en manzanas a menos de 200 mts.") cols(1)) ///
+name(PuorAMSU, replace)
+graph export "400PuorAMSU.png", as(png) name("PuorAMSU") replace
+
+graph dot (mean) tpc_puor tpc_puor_e0 tpc_puor_e1, ///
+over(nom_comuna, sort(tpc_puor) label(labsize(tiny))) ///
+marker(1, msymbol(smx)) marker(2, mcolor(dknavy) msymbol(circle_hollow)) marker(3, mcolor(cranberry) msymbol(circle)) yline(11.16, lwidth(thin) lpattern(dash) lcolor(lavender)) legend(order(1 "Promedio Comunal" 2 "Tasa Comunal - Fuera de Entornos" 3 "Tasa Comunal - Interior de Entornos") cols(1)) ///
+name(PueblosOriginarios, replace)
+graph export "401PueblosOriginarios.png", as(png) name("PueblosOriginarios") replace
+
+graph hbar (mean) tpc_puor_dif, over(nom_comuna, sort(tpc_puor_dif) label(labsize(tiny))) ///
+name(PueblosOriginarios_Dif, replace)
+graph export "402PueblosOriginarios_Dif.png", as(png) name("PueblosOriginarios_Dif") replace
+
+twoway (scatter tpc_puor_dif tpc_puor, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(0) xline(11.16, lwidth(thin) lpattern(dash) lcolor(lavender)) name(PueblosOriginariosDifRel, replace)
+graph export "403PueblosOriginariosDifRel.png", as(png) name("PueblosOriginariosDifRel") replace
+
+twoway (scatter tpc_puor_e0 tpc_puor_e1, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(11.16, lwidth(thin) lpattern(dash) lcolor(lavender)) xline(11.16, lwidth(thin) lpattern(dash) lcolor(lavender)) /// 
+xscale(range(0 20)) xlabel(0 5 10 15 20) yscale(range(0 20)) ylabel(0 5 10 15 20) ///
+name(PueblosOriginariosDifDif, replace)
+graph export "404PueblosOriginariosDifDif.png", as(png) name("PueblosOriginariosDifDif") replace
+
+***40% más vulnerable.
+
+graph bar (mean) tpc_t00_40_e0 tpc_t00_40_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%6,3g)) yscale(range(0 100)) yline(40) ylabel(20 40 60 80 100) ///
+legend(order(1 "Tasa Hogares vulnerables (40%+) en manzanas a más de 200 mts." 2 "Tasa Hogares vulnerables (40%+) en manzanas a menos de 200 mts.") cols(1)) ///
+name(RSH0040AMSU, replace)
+graph export "500RSHT0040AMSU.png", as(png) name("RSH0040AMSU") replace
+
+graph dot (mean) tpc_t00_40 tpc_t00_40_e0 tpc_t00_40_e1, ///
+over(nom_comuna, sort(tpc_t00_40) label(labsize(tiny))) ///
+marker(1, msymbol(smx)) marker(2, mcolor(dknavy) msymbol(circle_hollow)) marker(3, mcolor(cranberry) msymbol(circle)) yline (40) legend(order(1 "Promedio Comunal" 2 "Tasa Comunal - Fuera de Entornos" 3 "Tasa Comunal - Interior de Entornos") cols(1)) ///
+name(RSH0040, replace)
+graph export "501RSH0040.png", as(png) name("RSH0040") replace
+
+graph hbar (mean) tpc_t00_40dif, over(nom_comuna, sort(tpc_t00_40dif) label(labsize(tiny))) ///
+name(RSH0040_Dif, replace)
+graph export "502RSH0040_Dif.png", as(png) name("RSH0040_Dif") replace
+
+twoway (scatter tpc_t00_40dif tpc_t00_40, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(0) xline(40) name(RSH0040DifRel, replace)
+graph export "503RSH0040DifRel.png", as(png) name("RSH0040DifRel") replace
+
+twoway (scatter tpc_t00_40_e0 tpc_t00_40_e1, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(40) xline(40) /// 
+xscale(range(20 70)) xlabel(20 30 40 50 60 70) yscale(range(20 70)) ylabel(20 30 40 50 60 70) ///
+name(T0040DifDif, replace)
+graph export "504T0040DifDif.png", as(png) name("T0040DifDif") replace
+
+***60% más vulnerable.
+
+graph bar (mean) tpc_t00_60_e0 tpc_t00_60_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%6,3g)) yscale(range(0 100)) yline(60)  ylabel(20 40 60 80 100) ///
+legend(order(1 "Tasa Hogares vulnerables (60%+) en manzanas a más de 200 mts." 2 "Tasa Hogares vulnerables (60%+) en manzanas a menos de 200 mts.") cols(1)) ///
+name(RSH0060AMSU, replace)
+graph export "600RSHT0060AMSU.png", as(png) name("RSH0060AMSU") replace
+
+graph dot (mean) tpc_t00_60 tpc_t00_60_e0 tpc_t00_60_e1, ///
+over(nom_comuna, sort(tpc_t00_60) label(labsize(tiny))) ///
+marker(1, msymbol(smx)) marker(2, mcolor(dknavy) msymbol(circle_hollow)) marker(3, mcolor(cranberry) msymbol(circle)) yline (60) legend(order(1 "Promedio Comunal" 2 "Tasa Comunal - Fuera de Entornos" 3 "Tasa Comunal - Interior de Entornos") cols(1)) ///
+name(RSH0060, replace)
+graph export "601RSH0060.png", as(png) name("RSH0060") replace
+
+graph hbar (mean) tpc_t00_60dif, over(nom_comuna, sort(tpc_t00_60dif) label(labsize(tiny))) ///
+name(RSH0060_Dif, replace)
+graph export "602RSH0060_Dif.png", as(png) name("RSH0060_Dif") replace
+
+twoway (scatter tpc_t00_60dif tpc_t00_60, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(0) xline(60) name(RSH0060DifRel, replace)
+graph export "603RSH0060DifRel.png", as(png) name("RSH0060DifRel") replace
+
+twoway (scatter tpc_t00_60_e0 tpc_t00_60_e1, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(60) xline(60) /// 
+xscale(range(35 85)) xlabel(40 50 60 70 80) yscale(range(35 85)) ylabel(40 50 60 70 80) ///
+name(T0060DifDif, replace)
+graph export "604T0060DifDif.png", as(png) name("T0060DifDif") replace
+
+***80% más vulnerable.
+
+graph bar (mean) tpc_t00_80_e0 tpc_t00_80_e1, ///
+bar(1, fcolor(dknavy)) bar(2, fcolor(cranberry)) bargap(40) blabel(bar, ///
+format(%6,3g)) yscale(range(0 100)) yline(80) ylabel(20 40 60 80 100) ///
+legend(order(1 "Tasa Hogares vulnerables (80%+) en manzanas a más de 200 mts." 2 "Tasa Hogares vulnerables (80%+) en manzanas a menos de 200 mts.") cols(1)) ///
+name(RSH0080AMSU, replace)
+graph export "700RSHT0080AMSU.png", as(png) name("RSH0080AMSU") replace
+
+graph dot (mean) tpc_t00_80 tpc_t00_80_e0 tpc_t00_80_e1, ///
+over(nom_comuna, sort(tpc_t00_80) label(labsize(tiny))) ///
+marker(1, msymbol(smx)) marker(2, mcolor(dknavy) msymbol(circle_hollow)) marker(3, mcolor(cranberry) msymbol(circle)) yline (80) legend(order(1 "Promedio Comunal" 2 "Tasa Comunal - Fuera de Entornos" 3 "Tasa Comunal - Interior de Entornos") cols(1)) ///
+name(RSH0080, replace)
+graph export "701RSH0080.png", as(png) name("RSH0080") replace
+
+graph hbar (mean) tpc_t00_80dif, over(nom_comuna, sort(tpc_t00_80dif) label(labsize(tiny))) ///
+name(RSH0080_Dif, replace)
+graph export "702RSH0080_Dif.png", as(png) name("RSH0080_Dif") replace
+
+twoway (scatter tpc_t00_80dif tpc_t00_80, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(0) xline(80) name(RSH0080DifRel, replace)
+graph export "703RSH0080DifRel.png", as(png) name("RSH0080DifRel") replace
+
+twoway (scatter tpc_t00_80_e0 tpc_t00_80_e1, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(80) xline(80) /// 
+xscale(range(50 100)) xlabel(50 60 70 80 90 100) yscale(range(50 100)) ylabel(50 60 70 80 90 100) ///
+name(T0080DifDif, replace)
+graph export "704T0080DifDif.png", as(png) name("T0080DifDif") replace
+
+*Calificacion Tramos 00-40 y 00-60
+twoway (scatter tpc_t00_60 tpc_t00_40, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(60) yscale(range(20 90)) ylabel(20 40 60 80) ///
+xline(40) xscale(range(20 90)) xlabel(20 40 60 80) ///
+name(RSH004060, replace)
+graph export "800RSH004060.png", as(png) name("RSH004060") replace
+
+*Calificacion Tramos 00-40 y 00-80
+twoway (scatter tpc_t00_80 tpc_t00_40, mlabel(nom_comuna) mlabsize(tiny)), ///
+yline(80) yscale(range(20 90)) ylabel(20 40 60 80) ///
+xline(40) xscale(range(20 90)) xlabel(20 40 60 80) ///
+name(RSH004080, replace)
+graph export "801RSH004080.png", as(png) name("RSH004080") replace
+
+save dataof_02.dta, replace
+
