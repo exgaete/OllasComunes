@@ -1,0 +1,3685 @@
+clear all
+set more off
+set autotabgraph on, perm
+
+cd "C:\Users\exgae\OneDrive\2019_UPC\Proyecto_Final\03 data\independiente_fuentes\RSH\RSH_Hogares"
+
+*******************************
+*******************************
+*******************************
+**************RSH**************
+*******************************
+*******************************
+*******************************
+
+****Calificación por tramos***
+
+*Tramo 00-40*
+
+clear
+
+*Comuna 0
+import delimited "tramo_00-40\85_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear
+save "tramo_00-40\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "tramo_00-40\85_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_00-40\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "tramo_00-40\00.dta"
+append using "tramo_00-40\01.dta" "tramo_00-40\02.dta" "tramo_00-40\03.dta" "tramo_00-40\04.dta" "tramo_00-40\05.dta" "tramo_00-40\06.dta" "tramo_00-40\07.dta" "tramo_00-40\08.dta" "tramo_00-40\09.dta" "tramo_00-40\10.dta" "tramo_00-40\11.dta" "tramo_00-40\12.dta" "tramo_00-40\13.dta" "tramo_00-40\14.dta" "tramo_00-40\15.dta" "tramo_00-40\16.dta" "tramo_00-40\17.dta" "tramo_00-40\18.dta" "tramo_00-40\19.dta" "tramo_00-40\20.dta" "tramo_00-40\21.dta" "tramo_00-40\22.dta" "tramo_00-40\23.dta" "tramo_00-40\24.dta" "tramo_00-40\25.dta" "tramo_00-40\26.dta" "tramo_00-40\27.dta" "tramo_00-40\28.dta" "tramo_00-40\29.dta" "tramo_00-40\30.dta" "tramo_00-40\31.dta" "tramo_00-40\32.dta" "tramo_00-40\33.dta" "tramo_00-40\34.dta" "tramo_00-40\35.dta" "tramo_00-40\36.dta" "tramo_00-40\37.dta" "tramo_00-40\38.dta" "tramo_00-40\39.dta" "tramo_00-40\40.dta" "tramo_00-40\41.dta" "tramo_00-40\42.dta" "tramo_00-40\43.dta" "tramo_00-40\44.dta" "tramo_00-40\45.dta" "tramo_00-40\46.dta" "tramo_00-40\47.dta" "tramo_00-40\48.dta" "tramo_00-40\49.dta" "tramo_00-40\50.dta" "tramo_00-40\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v5
+
+save "RSH_AMS_00-40.dta", replace
+
+*Tramo 41-50*
+
+clear
+
+*Comuna 0
+import delimited "tramo_41-50\85_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "tramo_41-50\85_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_41-50\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "tramo_41-50\00.dta"
+append using "tramo_41-50\01.dta" "tramo_41-50\02.dta" "tramo_41-50\03.dta" "tramo_41-50\04.dta" "tramo_41-50\05.dta" "tramo_41-50\06.dta" "tramo_41-50\07.dta" "tramo_41-50\08.dta" "tramo_41-50\09.dta" "tramo_41-50\10.dta" "tramo_41-50\11.dta" "tramo_41-50\12.dta" "tramo_41-50\13.dta" "tramo_41-50\14.dta" "tramo_41-50\15.dta" "tramo_41-50\16.dta" "tramo_41-50\17.dta" "tramo_41-50\18.dta" "tramo_41-50\19.dta" "tramo_41-50\20.dta" "tramo_41-50\21.dta" "tramo_41-50\22.dta" "tramo_41-50\23.dta" "tramo_41-50\24.dta" "tramo_41-50\25.dta" "tramo_41-50\26.dta" "tramo_41-50\27.dta" "tramo_41-50\28.dta" "tramo_41-50\29.dta" "tramo_41-50\30.dta" "tramo_41-50\31.dta" "tramo_41-50\32.dta" "tramo_41-50\33.dta" "tramo_41-50\34.dta" "tramo_41-50\35.dta" "tramo_41-50\36.dta" "tramo_41-50\37.dta" "tramo_41-50\38.dta" "tramo_41-50\39.dta" "tramo_41-50\40.dta" "tramo_41-50\41.dta" "tramo_41-50\42.dta" "tramo_41-50\43.dta" "tramo_41-50\44.dta" "tramo_41-50\45.dta" "tramo_41-50\46.dta" "tramo_41-50\47.dta" "tramo_41-50\48.dta" "tramo_41-50\49.dta" "tramo_41-50\50.dta" "tramo_41-50\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v5
+
+save "RSH_AMS_41-50.dta", replace
+
+*Tramo 51-60*
+
+clear
+
+*Comuna 0
+import delimited "tramo_51-60\85_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "tramo_51-60\85_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_51-60\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "tramo_51-60\00.dta"
+append using "tramo_51-60\01.dta" "tramo_51-60\02.dta" "tramo_51-60\03.dta" "tramo_51-60\04.dta" "tramo_51-60\05.dta" "tramo_51-60\06.dta" "tramo_51-60\07.dta" "tramo_51-60\08.dta" "tramo_51-60\09.dta" "tramo_51-60\10.dta" "tramo_51-60\11.dta" "tramo_51-60\12.dta" "tramo_51-60\13.dta" "tramo_51-60\14.dta" "tramo_51-60\15.dta" "tramo_51-60\16.dta" "tramo_51-60\17.dta" "tramo_51-60\18.dta" "tramo_51-60\19.dta" "tramo_51-60\20.dta" "tramo_51-60\21.dta" "tramo_51-60\22.dta" "tramo_51-60\23.dta" "tramo_51-60\24.dta" "tramo_51-60\25.dta" "tramo_51-60\26.dta" "tramo_51-60\27.dta" "tramo_51-60\28.dta" "tramo_51-60\29.dta" "tramo_51-60\30.dta" "tramo_51-60\31.dta" "tramo_51-60\32.dta" "tramo_51-60\33.dta" "tramo_51-60\34.dta" "tramo_51-60\35.dta" "tramo_51-60\36.dta" "tramo_51-60\37.dta" "tramo_51-60\38.dta" "tramo_51-60\39.dta" "tramo_51-60\40.dta" "tramo_51-60\41.dta" "tramo_51-60\42.dta" "tramo_51-60\43.dta" "tramo_51-60\44.dta" "tramo_51-60\45.dta" "tramo_51-60\46.dta" "tramo_51-60\47.dta" "tramo_51-60\48.dta" "tramo_51-60\49.dta" "tramo_51-60\50.dta" "tramo_51-60\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v5
+
+save "RSH_AMS_51-60.dta", replace
+
+*Tramo 61-70*
+
+clear
+
+*Comuna 0
+import delimited "tramo_61-70\85_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "tramo_61-70\85_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_61-70\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "tramo_61-70\00.dta"
+append using "tramo_61-70\01.dta" "tramo_61-70\02.dta" "tramo_61-70\03.dta" "tramo_61-70\04.dta" "tramo_61-70\05.dta" "tramo_61-70\06.dta" "tramo_61-70\07.dta" "tramo_61-70\08.dta" "tramo_61-70\09.dta" "tramo_61-70\10.dta" "tramo_61-70\11.dta" "tramo_61-70\12.dta" "tramo_61-70\13.dta" "tramo_61-70\14.dta" "tramo_61-70\15.dta" "tramo_61-70\16.dta" "tramo_61-70\17.dta" "tramo_61-70\18.dta" "tramo_61-70\19.dta" "tramo_61-70\20.dta" "tramo_61-70\21.dta" "tramo_61-70\22.dta" "tramo_61-70\23.dta" "tramo_61-70\24.dta" "tramo_61-70\25.dta" "tramo_61-70\26.dta" "tramo_61-70\27.dta" "tramo_61-70\28.dta" "tramo_61-70\29.dta" "tramo_61-70\30.dta" "tramo_61-70\31.dta" "tramo_61-70\32.dta" "tramo_61-70\33.dta" "tramo_61-70\34.dta" "tramo_61-70\35.dta" "tramo_61-70\36.dta" "tramo_61-70\37.dta" "tramo_61-70\38.dta" "tramo_61-70\39.dta" "tramo_61-70\40.dta" "tramo_61-70\41.dta" "tramo_61-70\42.dta" "tramo_61-70\43.dta" "tramo_61-70\44.dta" "tramo_61-70\45.dta" "tramo_61-70\46.dta" "tramo_61-70\47.dta" "tramo_61-70\48.dta" "tramo_61-70\49.dta" "tramo_61-70\50.dta" "tramo_61-70\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v5
+
+save "RSH_AMS_61-70.dta", replace
+
+*Tramo 71-80*
+
+clear
+
+*Comuna 0
+import delimited "tramo_71-80\85_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "tramo_71-80\85_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_71-80\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "tramo_71-80\00.dta"
+append using "tramo_71-80\01.dta" "tramo_71-80\02.dta" "tramo_71-80\03.dta" "tramo_71-80\04.dta" "tramo_71-80\05.dta" "tramo_71-80\06.dta" "tramo_71-80\07.dta" "tramo_71-80\08.dta" "tramo_71-80\09.dta" "tramo_71-80\10.dta" "tramo_71-80\11.dta" "tramo_71-80\12.dta" "tramo_71-80\13.dta" "tramo_71-80\14.dta" "tramo_71-80\15.dta" "tramo_71-80\16.dta" "tramo_71-80\17.dta" "tramo_71-80\18.dta" "tramo_71-80\19.dta" "tramo_71-80\20.dta" "tramo_71-80\21.dta" "tramo_71-80\22.dta" "tramo_71-80\23.dta" "tramo_71-80\24.dta" "tramo_71-80\25.dta" "tramo_71-80\26.dta" "tramo_71-80\27.dta" "tramo_71-80\28.dta" "tramo_71-80\29.dta" "tramo_71-80\30.dta" "tramo_71-80\31.dta" "tramo_71-80\32.dta" "tramo_71-80\33.dta" "tramo_71-80\34.dta" "tramo_71-80\35.dta" "tramo_71-80\36.dta" "tramo_71-80\37.dta" "tramo_71-80\38.dta" "tramo_71-80\39.dta" "tramo_71-80\40.dta" "tramo_71-80\41.dta" "tramo_71-80\42.dta" "tramo_71-80\43.dta" "tramo_71-80\44.dta" "tramo_71-80\45.dta" "tramo_71-80\46.dta" "tramo_71-80\47.dta" "tramo_71-80\48.dta" "tramo_71-80\49.dta" "tramo_71-80\50.dta" "tramo_71-80\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v5
+
+save "RSH_AMS_71-80.dta", replace
+
+*Tramo 81-90*
+
+clear
+
+*Comuna 0
+import delimited "tramo_81-90\85_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "tramo_81-90\85_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_81-90\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "tramo_81-90\00.dta"
+append using "tramo_81-90\01.dta" "tramo_81-90\02.dta" "tramo_81-90\03.dta" "tramo_81-90\04.dta" "tramo_81-90\05.dta" "tramo_81-90\06.dta" "tramo_81-90\07.dta" "tramo_81-90\08.dta" "tramo_81-90\09.dta" "tramo_81-90\10.dta" "tramo_81-90\11.dta" "tramo_81-90\12.dta" "tramo_81-90\13.dta" "tramo_81-90\14.dta" "tramo_81-90\15.dta" "tramo_81-90\16.dta" "tramo_81-90\17.dta" "tramo_81-90\18.dta" "tramo_81-90\19.dta" "tramo_81-90\20.dta" "tramo_81-90\21.dta" "tramo_81-90\22.dta" "tramo_81-90\23.dta" "tramo_81-90\24.dta" "tramo_81-90\25.dta" "tramo_81-90\26.dta" "tramo_81-90\27.dta" "tramo_81-90\28.dta" "tramo_81-90\29.dta" "tramo_81-90\30.dta" "tramo_81-90\31.dta" "tramo_81-90\32.dta" "tramo_81-90\33.dta" "tramo_81-90\34.dta" "tramo_81-90\35.dta" "tramo_81-90\36.dta" "tramo_81-90\37.dta" "tramo_81-90\38.dta" "tramo_81-90\39.dta" "tramo_81-90\40.dta" "tramo_81-90\41.dta" "tramo_81-90\42.dta" "tramo_81-90\43.dta" "tramo_81-90\44.dta" "tramo_81-90\45.dta" "tramo_81-90\46.dta" "tramo_81-90\47.dta" "tramo_81-90\48.dta" "tramo_81-90\49.dta" "tramo_81-90\50.dta" "tramo_81-90\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v5
+
+save "RSH_AMS_81-90.dta", replace
+
+*Tramo 91-100*
+
+clear
+
+*Comuna 0
+import delimited "tramo_91-100\85_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "tramo_91-100\85_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "tramo_91-100\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "tramo_91-100\00.dta"
+append using "tramo_91-100\01.dta" "tramo_91-100\02.dta" "tramo_91-100\03.dta" "tramo_91-100\04.dta" "tramo_91-100\05.dta" "tramo_91-100\06.dta" "tramo_91-100\07.dta" "tramo_91-100\08.dta" "tramo_91-100\09.dta" "tramo_91-100\10.dta" "tramo_91-100\11.dta" "tramo_91-100\12.dta" "tramo_91-100\13.dta" "tramo_91-100\14.dta" "tramo_91-100\15.dta" "tramo_91-100\16.dta" "tramo_91-100\17.dta" "tramo_91-100\18.dta" "tramo_91-100\19.dta" "tramo_91-100\20.dta" "tramo_91-100\21.dta" "tramo_91-100\22.dta" "tramo_91-100\23.dta" "tramo_91-100\24.dta" "tramo_91-100\25.dta" "tramo_91-100\26.dta" "tramo_91-100\27.dta" "tramo_91-100\28.dta" "tramo_91-100\29.dta" "tramo_91-100\30.dta" "tramo_91-100\31.dta" "tramo_91-100\32.dta" "tramo_91-100\33.dta" "tramo_91-100\34.dta" "tramo_91-100\35.dta" "tramo_91-100\36.dta" "tramo_91-100\37.dta" "tramo_91-100\38.dta" "tramo_91-100\39.dta" "tramo_91-100\40.dta" "tramo_91-100\41.dta" "tramo_91-100\42.dta" "tramo_91-100\43.dta" "tramo_91-100\44.dta" "tramo_91-100\45.dta" "tramo_91-100\46.dta" "tramo_91-100\47.dta" "tramo_91-100\48.dta" "tramo_91-100\49.dta" "tramo_91-100\50.dta" "tramo_91-100\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v5
+
+save "RSH_AMS_91-100.dta", replace
+
+*Cobertura*
+
+clear
+
+*Comuna 0
+import delimited "RSH_Cobertura\86_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "RSH_Cobertura\86_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7 8 9 10 11) clear 
+save "RSH_Cobertura\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "RSH_Cobertura\00.dta"
+append using "RSH_Cobertura\01.dta" "RSH_Cobertura\02.dta" "RSH_Cobertura\03.dta" "RSH_Cobertura\04.dta" "RSH_Cobertura\05.dta" "RSH_Cobertura\06.dta" "RSH_Cobertura\07.dta" "RSH_Cobertura\08.dta" "RSH_Cobertura\09.dta" "RSH_Cobertura\10.dta" "RSH_Cobertura\11.dta" "RSH_Cobertura\12.dta" "RSH_Cobertura\13.dta" "RSH_Cobertura\14.dta" "RSH_Cobertura\15.dta" "RSH_Cobertura\16.dta" "RSH_Cobertura\17.dta" "RSH_Cobertura\18.dta" "RSH_Cobertura\19.dta" "RSH_Cobertura\20.dta" "RSH_Cobertura\21.dta" "RSH_Cobertura\22.dta" "RSH_Cobertura\23.dta" "RSH_Cobertura\24.dta" "RSH_Cobertura\25.dta" "RSH_Cobertura\26.dta" "RSH_Cobertura\27.dta" "RSH_Cobertura\28.dta" "RSH_Cobertura\29.dta" "RSH_Cobertura\30.dta" "RSH_Cobertura\31.dta" "RSH_Cobertura\32.dta" "RSH_Cobertura\33.dta" "RSH_Cobertura\34.dta" "RSH_Cobertura\35.dta" "RSH_Cobertura\36.dta" "RSH_Cobertura\37.dta" "RSH_Cobertura\38.dta" "RSH_Cobertura\39.dta" "RSH_Cobertura\40.dta" "RSH_Cobertura\41.dta" "RSH_Cobertura\42.dta" "RSH_Cobertura\43.dta" "RSH_Cobertura\44.dta" "RSH_Cobertura\45.dta" "RSH_Cobertura\46.dta" "RSH_Cobertura\47.dta" "RSH_Cobertura\48.dta" "RSH_Cobertura\49.dta" "RSH_Cobertura\50.dta" "RSH_Cobertura\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v12
+rename tramo040 ct00_40
+rename tramo4150 ct41_50
+rename tramo5160 ct51_60
+rename tramo6170 ct61_70
+rename tramo7180 ct71_80
+rename tramo8190 ct81_90
+rename tramo91100 ct91_100
+rename total ct_total
+save "RSH_AMS_Cobert.dta", replace
+
+
+*Carencia de Servicios*
+
+clear
+
+*Comuna 0
+
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear
+save "RSH_CarenciaServicios\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "RSH_CarenciaServicios\236_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) clear 
+save "RSH_CarenciaServicios\51.dta", replace
+
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "RSH_CarenciaServicios\00.dta"
+append using "RSH_CarenciaServicios\01.dta" "RSH_CarenciaServicios\02.dta" "RSH_CarenciaServicios\03.dta" "RSH_CarenciaServicios\04.dta" "RSH_CarenciaServicios\05.dta" "RSH_CarenciaServicios\06.dta" "RSH_CarenciaServicios\07.dta" "RSH_CarenciaServicios\08.dta" "RSH_CarenciaServicios\09.dta" "RSH_CarenciaServicios\10.dta" "RSH_CarenciaServicios\11.dta" "RSH_CarenciaServicios\12.dta" "RSH_CarenciaServicios\13.dta" "RSH_CarenciaServicios\14.dta" "RSH_CarenciaServicios\15.dta" "RSH_CarenciaServicios\16.dta" "RSH_CarenciaServicios\17.dta" "RSH_CarenciaServicios\18.dta" "RSH_CarenciaServicios\19.dta" "RSH_CarenciaServicios\20.dta" "RSH_CarenciaServicios\21.dta" "RSH_CarenciaServicios\22.dta" "RSH_CarenciaServicios\23.dta" "RSH_CarenciaServicios\24.dta" "RSH_CarenciaServicios\25.dta" "RSH_CarenciaServicios\26.dta" "RSH_CarenciaServicios\27.dta" "RSH_CarenciaServicios\28.dta" "RSH_CarenciaServicios\29.dta" "RSH_CarenciaServicios\30.dta" "RSH_CarenciaServicios\31.dta" "RSH_CarenciaServicios\32.dta" "RSH_CarenciaServicios\33.dta" "RSH_CarenciaServicios\34.dta" "RSH_CarenciaServicios\35.dta" "RSH_CarenciaServicios\36.dta" "RSH_CarenciaServicios\37.dta" "RSH_CarenciaServicios\38.dta" "RSH_CarenciaServicios\39.dta" "RSH_CarenciaServicios\40.dta" "RSH_CarenciaServicios\41.dta" "RSH_CarenciaServicios\42.dta" "RSH_CarenciaServicios\43.dta" "RSH_CarenciaServicios\44.dta" "RSH_CarenciaServicios\45.dta" "RSH_CarenciaServicios\46.dta" "RSH_CarenciaServicios\47.dta" "RSH_CarenciaServicios\48.dta" "RSH_CarenciaServicios\49.dta" "RSH_CarenciaServicios\50.dta" "RSH_CarenciaServicios\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+drop v5
+rename total carserv
+
+save "RSH_AMS_CarenciaServ.dta", replace
+
+*Tipo Hogar (Monoparental, biparental, extenso)*
+
+clear
+
+*Comuna 0
+
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+save "RSH_TipoHogar\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "RSH_TipoHogar\130_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4 5 6 7) clear 
+rename total h_monop
+rename v5 h_bip
+rename v6 h_ext
+rename v7 h_tot
+drop v8
+save "RSH_TipoHogar\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "RSH_TipoHogar\00.dta"
+append using "RSH_TipoHogar\01.dta" "RSH_TipoHogar\02.dta" "RSH_TipoHogar\03.dta" "RSH_TipoHogar\04.dta" "RSH_TipoHogar\05.dta" "RSH_TipoHogar\06.dta" "RSH_TipoHogar\07.dta" "RSH_TipoHogar\08.dta" "RSH_TipoHogar\09.dta" "RSH_TipoHogar\10.dta" "RSH_TipoHogar\11.dta" "RSH_TipoHogar\12.dta" "RSH_TipoHogar\13.dta" "RSH_TipoHogar\14.dta" "RSH_TipoHogar\15.dta" "RSH_TipoHogar\16.dta" "RSH_TipoHogar\17.dta" "RSH_TipoHogar\18.dta" "RSH_TipoHogar\19.dta" "RSH_TipoHogar\20.dta" "RSH_TipoHogar\21.dta" "RSH_TipoHogar\22.dta" "RSH_TipoHogar\23.dta" "RSH_TipoHogar\24.dta" "RSH_TipoHogar\25.dta" "RSH_TipoHogar\26.dta" "RSH_TipoHogar\27.dta" "RSH_TipoHogar\28.dta" "RSH_TipoHogar\29.dta" "RSH_TipoHogar\30.dta" "RSH_TipoHogar\31.dta" "RSH_TipoHogar\32.dta" "RSH_TipoHogar\33.dta" "RSH_TipoHogar\34.dta" "RSH_TipoHogar\35.dta" "RSH_TipoHogar\36.dta" "RSH_TipoHogar\37.dta" "RSH_TipoHogar\38.dta" "RSH_TipoHogar\39.dta" "RSH_TipoHogar\40.dta" "RSH_TipoHogar\41.dta" "RSH_TipoHogar\42.dta" "RSH_TipoHogar\43.dta" "RSH_TipoHogar\44.dta" "RSH_TipoHogar\45.dta" "RSH_TipoHogar\46.dta" "RSH_TipoHogar\47.dta" "RSH_TipoHogar\48.dta" "RSH_TipoHogar\49.dta" "RSH_TipoHogar\50.dta" "RSH_TipoHogar\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+*Corregir error en digitación UV El Bosque
+replace unidadvecinal = "001" if unidadvecinal=="1" & comuna=="El Bosque"
+replace unidadvecinal = "002" if unidadvecinal=="2" & comuna=="El Bosque"
+replace unidadvecinal = "003" if unidadvecinal=="3" & comuna=="El Bosque"
+replace unidadvecinal = "004" if unidadvecinal=="4" & comuna=="El Bosque"
+replace unidadvecinal = "005" if unidadvecinal=="5" & comuna=="El Bosque"
+replace unidadvecinal = "006" if unidadvecinal=="6" & comuna=="El Bosque"
+replace unidadvecinal = "007" if unidadvecinal=="7" & comuna=="El Bosque"
+replace unidadvecinal = "008" if unidadvecinal=="8" & comuna=="El Bosque"
+replace unidadvecinal = "009" if unidadvecinal=="9" & comuna=="El Bosque"
+replace unidadvecinal = "010" if unidadvecinal=="10" & comuna=="El Bosque"
+replace unidadvecinal = "011" if unidadvecinal=="11" & comuna=="El Bosque"
+replace unidadvecinal = "012" if unidadvecinal=="12" & comuna=="El Bosque"
+replace unidadvecinal = "013" if unidadvecinal=="13" & comuna=="El Bosque"
+replace unidadvecinal = "014" if unidadvecinal=="14" & comuna=="El Bosque"
+replace unidadvecinal = "015" if unidadvecinal=="15" & comuna=="El Bosque"
+replace unidadvecinal = "016" if unidadvecinal=="16" & comuna=="El Bosque"
+replace unidadvecinal = "017" if unidadvecinal=="17" & comuna=="El Bosque"
+replace unidadvecinal = "018" if unidadvecinal=="18" & comuna=="El Bosque"
+replace unidadvecinal = "019" if unidadvecinal=="19" & comuna=="El Bosque"
+replace unidadvecinal = "020" if unidadvecinal=="20" & comuna=="El Bosque"
+replace unidadvecinal = "021" if unidadvecinal=="21" & comuna=="El Bosque"
+replace unidadvecinal = "022" if unidadvecinal=="22" & comuna=="El Bosque"
+replace unidadvecinal = "023" if unidadvecinal=="23" & comuna=="El Bosque"
+replace unidadvecinal = "024" if unidadvecinal=="24" & comuna=="El Bosque"
+replace unidadvecinal = "025" if unidadvecinal=="25" & comuna=="El Bosque"
+replace unidadvecinal = "026" if unidadvecinal=="26" & comuna=="El Bosque"
+replace unidadvecinal = "027" if unidadvecinal=="27" & comuna=="El Bosque"
+replace unidadvecinal = "028" if unidadvecinal=="28" & comuna=="El Bosque"
+replace unidadvecinal = "029" if unidadvecinal=="29" & comuna=="El Bosque"
+replace unidadvecinal = "030" if unidadvecinal=="30" & comuna=="El Bosque"
+replace unidadvecinal = "031" if unidadvecinal=="31" & comuna=="El Bosque"
+replace unidadvecinal = "032" if unidadvecinal=="32" & comuna=="El Bosque"
+replace unidadvecinal = "033" if unidadvecinal=="33" & comuna=="El Bosque"
+replace unidadvecinal = "034" if unidadvecinal=="34" & comuna=="El Bosque"
+replace unidadvecinal = "035" if unidadvecinal=="35" & comuna=="El Bosque"
+replace unidadvecinal = "036" if unidadvecinal=="36" & comuna=="El Bosque"
+replace unidadvecinal = "037" if unidadvecinal=="37" & comuna=="El Bosque"
+replace unidadvecinal = "038" if unidadvecinal=="38" & comuna=="El Bosque"
+replace unidadvecinal = "039" if unidadvecinal=="39" & comuna=="El Bosque"
+replace unidadvecinal = "040" if unidadvecinal=="40" & comuna=="El Bosque"
+replace unidadvecinal = "041" if unidadvecinal=="41" & comuna=="El Bosque"
+replace unidadvecinal = "042" if unidadvecinal=="42" & comuna=="El Bosque"
+replace unidadvecinal = "043" if unidadvecinal=="43" & comuna=="El Bosque"
+replace unidadvecinal = "044" if unidadvecinal=="44" & comuna=="El Bosque"
+replace unidadvecinal = "045" if unidadvecinal=="45" & comuna=="El Bosque"
+replace unidadvecinal = "046" if unidadvecinal=="46" & comuna=="El Bosque"
+replace unidadvecinal = "047" if unidadvecinal=="47" & comuna=="El Bosque"
+replace unidadvecinal = "048" if unidadvecinal=="48" & comuna=="El Bosque"
+replace unidadvecinal = "049" if unidadvecinal=="49" & comuna=="El Bosque"
+replace unidadvecinal = "050" if unidadvecinal=="50" & comuna=="El Bosque"
+replace unidadvecinal = "051" if unidadvecinal=="51" & comuna=="El Bosque"
+replace unidadvecinal = "052" if unidadvecinal=="52" & comuna=="El Bosque"
+replace unidadvecinal = "053" if unidadvecinal=="53" & comuna=="El Bosque"
+
+save "RSH_AMS_TipoHogar.dta", replace
+
+*Ocupación y Cotización PERSONAS*
+
+clear
+
+*Comuna 0
+
+import delimited "C:\Users\exgae\OneDrive\2019_UPC\Proyecto_Final\03 data\independiente_fuentes\RSH\RSH_Hogares\RSH_Ocupacion\458_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3 4) 
+
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (0).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear
+save "RSH_Ocupacion\00.dta", replace
+
+*Comuna 1
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (1).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\01.dta", replace
+
+*Comuna 2
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (2).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\02.dta", replace
+
+*Comuna 3
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (3).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\03.dta", replace
+
+*Comuna 4
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (4).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\04.dta", replace
+
+*Comuna 5
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (5).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\05.dta", replace
+
+*Comuna 6
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (6).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\06.dta", replace
+
+*Comuna 7
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (7).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\07.dta", replace
+
+*Comuna 8
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (8).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\08.dta", replace
+
+*Comuna 9
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (9).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\09.dta", replace
+
+*Comuna 10
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (10).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\10.dta", replace
+
+*Comuna 11
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (11).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\11.dta", replace
+
+*Comuna 12
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (12).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\12.dta", replace
+
+*Comuna 13
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (13).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\13.dta", replace
+
+*Comuna 14
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (14).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\14.dta", replace
+
+*Comuna 15
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (15).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\15.dta", replace
+
+*Comuna 16
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (16).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\16.dta", replace
+
+*Comuna 17
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (17).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\17.dta", replace
+
+*Comuna 18
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (18).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\18.dta", replace
+
+*Comuna 19
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (19).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\19.dta", replace
+
+*Comuna 20
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (20).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\20.dta", replace
+
+*Comuna 21
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (21).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\21.dta", replace
+
+*Comuna 22
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (22).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\22.dta", replace
+
+*Comuna 23
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (23).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\23.dta", replace
+
+*Comuna 24
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (24).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\24.dta", replace
+
+*Comuna 25
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (25).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\25.dta", replace
+
+*Comuna 26
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (26).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\26.dta", replace
+
+*Comuna 27
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (27).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\27.dta", replace
+
+*Comuna 28
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (28).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\28.dta", replace
+
+*Comuna 29
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (29).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\29.dta", replace
+
+*Comuna 30
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (30).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\30.dta", replace
+
+*Comuna 31
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (31).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\31.dta", replace
+
+*Comuna 32
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (32).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\32.dta", replace
+
+*Comuna 33
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (33).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\33.dta", replace
+
+*Comuna 34
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (34).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\34.dta", replace
+
+*Comuna 35
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (35).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\35.dta", replace
+
+*Comuna 36
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (36).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\36.dta", replace
+
+*Comuna 37
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (37).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\37.dta", replace
+
+*Comuna 38
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (38).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\38.dta", replace
+
+*Comuna 39
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (39).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\39.dta", replace
+
+*Comuna 40
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (40).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\40.dta", replace
+
+*Comuna 41
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (41).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\41.dta", replace
+
+*Comuna 42
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (42).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\42.dta", replace
+
+*Comuna 43
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (43).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\43.dta", replace
+
+*Comuna 44
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (44).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\44.dta", replace
+
+*Comuna 45
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (45).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\45.dta", replace
+
+*Comuna 46
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (46).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\46.dta", replace
+
+*Comuna 47
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (47).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\47.dta", replace
+
+*Comuna 48
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (48).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\48.dta", replace
+
+*Comuna 49
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (49).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\49.dta", replace
+
+*Comuna 50
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (50).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\50.dta", replace
+
+*Comuna 51
+clear
+import delimited "RSH_Ocupacion\458_UV_descargar_datos (51).csv", varnames(1) parselocale(en_GB) groupseparator(.) decimalseparator(,) stringcols(3) numericcols(4) clear 
+save "RSH_Ocupacion\51.dta", replace
+
+*MERGE BETWEEN COMUNAL FILES
+
+clear
+
+use "RSH_Ocupacion\00.dta"
+append using "RSH_Ocupacion\01.dta" "RSH_Ocupacion\02.dta" "RSH_Ocupacion\03.dta" "RSH_Ocupacion\04.dta" "RSH_Ocupacion\05.dta" "RSH_Ocupacion\06.dta" "RSH_Ocupacion\07.dta" "RSH_Ocupacion\08.dta" "RSH_Ocupacion\09.dta" "RSH_Ocupacion\10.dta" "RSH_Ocupacion\11.dta" "RSH_Ocupacion\12.dta" "RSH_Ocupacion\13.dta" "RSH_Ocupacion\14.dta" "RSH_Ocupacion\15.dta" "RSH_Ocupacion\16.dta" "RSH_Ocupacion\17.dta" "RSH_Ocupacion\18.dta" "RSH_Ocupacion\19.dta" "RSH_Ocupacion\20.dta" "RSH_Ocupacion\21.dta" "RSH_Ocupacion\22.dta" "RSH_Ocupacion\23.dta" "RSH_Ocupacion\24.dta" "RSH_Ocupacion\25.dta" "RSH_Ocupacion\26.dta" "RSH_Ocupacion\27.dta" "RSH_Ocupacion\28.dta" "RSH_Ocupacion\29.dta" "RSH_Ocupacion\30.dta" "RSH_Ocupacion\31.dta" "RSH_Ocupacion\32.dta" "RSH_Ocupacion\33.dta" "RSH_Ocupacion\34.dta" "RSH_Ocupacion\35.dta" "RSH_Ocupacion\36.dta" "RSH_Ocupacion\37.dta" "RSH_Ocupacion\38.dta" "RSH_Ocupacion\39.dta" "RSH_Ocupacion\40.dta" "RSH_Ocupacion\41.dta" "RSH_Ocupacion\42.dta" "RSH_Ocupacion\43.dta" "RSH_Ocupacion\44.dta" "RSH_Ocupacion\45.dta" "RSH_Ocupacion\46.dta" "RSH_Ocupacion\47.dta" "RSH_Ocupacion\48.dta" "RSH_Ocupacion\49.dta" "RSH_Ocupacion\50.dta" "RSH_Ocupacion\51.dta"
+
+*Corregir duplicado en PAC
+replace unidadvecinal = "VILLA SUR 1" in 708 if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+replace unidadvecinal = "VILLA SUR 2" in 709  if unidadvecinal=="VILLA SUR" & comuna=="Pedro Aguirre Cerda"
+
+
+*Corregir error en digitación UV El Bosque
+replace unidadvecinal = "001" if unidadvecinal=="1" & comuna=="El Bosque"
+replace unidadvecinal = "002" if unidadvecinal=="2" & comuna=="El Bosque"
+replace unidadvecinal = "003" if unidadvecinal=="3" & comuna=="El Bosque"
+replace unidadvecinal = "004" if unidadvecinal=="4" & comuna=="El Bosque"
+replace unidadvecinal = "005" if unidadvecinal=="5" & comuna=="El Bosque"
+replace unidadvecinal = "006" if unidadvecinal=="6" & comuna=="El Bosque"
+replace unidadvecinal = "007" if unidadvecinal=="7" & comuna=="El Bosque"
+replace unidadvecinal = "008" if unidadvecinal=="8" & comuna=="El Bosque"
+replace unidadvecinal = "009" if unidadvecinal=="9" & comuna=="El Bosque"
+replace unidadvecinal = "010" if unidadvecinal=="10" & comuna=="El Bosque"
+replace unidadvecinal = "011" if unidadvecinal=="11" & comuna=="El Bosque"
+replace unidadvecinal = "012" if unidadvecinal=="12" & comuna=="El Bosque"
+replace unidadvecinal = "013" if unidadvecinal=="13" & comuna=="El Bosque"
+replace unidadvecinal = "014" if unidadvecinal=="14" & comuna=="El Bosque"
+replace unidadvecinal = "015" if unidadvecinal=="15" & comuna=="El Bosque"
+replace unidadvecinal = "016" if unidadvecinal=="16" & comuna=="El Bosque"
+replace unidadvecinal = "017" if unidadvecinal=="17" & comuna=="El Bosque"
+replace unidadvecinal = "018" if unidadvecinal=="18" & comuna=="El Bosque"
+replace unidadvecinal = "019" if unidadvecinal=="19" & comuna=="El Bosque"
+replace unidadvecinal = "020" if unidadvecinal=="20" & comuna=="El Bosque"
+replace unidadvecinal = "021" if unidadvecinal=="21" & comuna=="El Bosque"
+replace unidadvecinal = "022" if unidadvecinal=="22" & comuna=="El Bosque"
+replace unidadvecinal = "023" if unidadvecinal=="23" & comuna=="El Bosque"
+replace unidadvecinal = "024" if unidadvecinal=="24" & comuna=="El Bosque"
+replace unidadvecinal = "025" if unidadvecinal=="25" & comuna=="El Bosque"
+replace unidadvecinal = "026" if unidadvecinal=="26" & comuna=="El Bosque"
+replace unidadvecinal = "027" if unidadvecinal=="27" & comuna=="El Bosque"
+replace unidadvecinal = "028" if unidadvecinal=="28" & comuna=="El Bosque"
+replace unidadvecinal = "029" if unidadvecinal=="29" & comuna=="El Bosque"
+replace unidadvecinal = "030" if unidadvecinal=="30" & comuna=="El Bosque"
+replace unidadvecinal = "031" if unidadvecinal=="31" & comuna=="El Bosque"
+replace unidadvecinal = "032" if unidadvecinal=="32" & comuna=="El Bosque"
+replace unidadvecinal = "033" if unidadvecinal=="33" & comuna=="El Bosque"
+replace unidadvecinal = "034" if unidadvecinal=="34" & comuna=="El Bosque"
+replace unidadvecinal = "035" if unidadvecinal=="35" & comuna=="El Bosque"
+replace unidadvecinal = "036" if unidadvecinal=="36" & comuna=="El Bosque"
+replace unidadvecinal = "037" if unidadvecinal=="37" & comuna=="El Bosque"
+replace unidadvecinal = "038" if unidadvecinal=="38" & comuna=="El Bosque"
+replace unidadvecinal = "039" if unidadvecinal=="39" & comuna=="El Bosque"
+replace unidadvecinal = "040" if unidadvecinal=="40" & comuna=="El Bosque"
+replace unidadvecinal = "041" if unidadvecinal=="41" & comuna=="El Bosque"
+replace unidadvecinal = "042" if unidadvecinal=="42" & comuna=="El Bosque"
+replace unidadvecinal = "043" if unidadvecinal=="43" & comuna=="El Bosque"
+replace unidadvecinal = "044" if unidadvecinal=="44" & comuna=="El Bosque"
+replace unidadvecinal = "045" if unidadvecinal=="45" & comuna=="El Bosque"
+replace unidadvecinal = "046" if unidadvecinal=="46" & comuna=="El Bosque"
+replace unidadvecinal = "047" if unidadvecinal=="47" & comuna=="El Bosque"
+replace unidadvecinal = "048" if unidadvecinal=="48" & comuna=="El Bosque"
+replace unidadvecinal = "049" if unidadvecinal=="49" & comuna=="El Bosque"
+replace unidadvecinal = "050" if unidadvecinal=="50" & comuna=="El Bosque"
+replace unidadvecinal = "051" if unidadvecinal=="51" & comuna=="El Bosque"
+replace unidadvecinal = "052" if unidadvecinal=="52" & comuna=="El Bosque"
+replace unidadvecinal = "053" if unidadvecinal=="53" & comuna=="El Bosque"
+
+drop v5
+
+save "RSH_AMS_Ocupacion.dta", replace
+
+***MERGE***
+
+clear
+use "RSH_AMS_00-40.dta"
+merge 1:1 comuna unidadvecinal using "RSH_AMS_41-50.dta"
+drop _merge
+
+merge 1:1 comuna unidadvecinal using "RSH_AMS_51-60.dta"
+drop _merge
+
+merge 1:1 comuna unidadvecinal using "RSH_AMS_61-70.dta"
+drop _merge
+
+merge 1:1 comuna unidadvecinal using "RSH_AMS_71-80.dta"
+drop _merge
+
+merge 1:1 comuna unidadvecinal using "RSH_AMS_81-90.dta"
+drop _merge
+
+merge 1:1 comuna unidadvecinal using "RSH_AMS_91-100.dta"
+drop _merge
+
+merge m:m comuna unidadvecinal using "RSH_AMS_Cobert.dta"
+drop _merge
+
+merge m:m comuna unidadvecinal using "RSH_AMS_CarenciaServ.dta"
+drop _merge
+
+merge m:m comuna unidadvecinal using "RSH_AMS_CarenciaServ.dta"
+drop _merge
+
+merge m:m comuna unidadvecinal using "RSH_AMS_TipoHogar.dta"
+drop _merge
+
+merge m:m comuna unidadvecinal using "RSH_AMS_Ocupacion.dta"
+drop _merge
+
+rename tramo040 t00_40
+rename tramo4150 t41_50
+rename tramo5160 t51_60
+rename tramo6170 t61_70
+rename tramo7180 t71_80
+rename tramo8190 t81_90
+rename tramo91100 t91_100
+
+gen COMUNA2 = upper(comuna)
+
+replace COMUNA2= subinstr(COMUNA2, "Á", "A",.)
+replace COMUNA2= subinstr(COMUNA2, "É", "E",.)
+replace COMUNA2= subinstr(COMUNA2, "Í", "I",.)
+replace COMUNA2= subinstr(COMUNA2, "Ó", "O",.)
+replace COMUNA2= subinstr(COMUNA2, "Ú", "U",.)
+replace COMUNA2= subinstr(COMUNA2, "Ñ", "N",.)
+replace COMUNA2= subinstr(COMUNA2, "á", "A",.)
+replace COMUNA2= subinstr(COMUNA2, "é", "E",.)
+replace COMUNA2= subinstr(COMUNA2, "í", "I",.)
+replace COMUNA2= subinstr(COMUNA2, "ó", "O",.)
+replace COMUNA2= subinstr(COMUNA2, "ú", "U",.)
+replace COMUNA2= subinstr(COMUNA2, "ñ", "N",.)
+replace COMUNA2= subinstr(COMUNA2, "'", "",.)
+replace COMUNA2= subinstr(COMUNA2, "´", "",.)
+
+g com_UV = COMUNA2 + "_" + unidadvecinal
+
+replace com_UV ="CALERA DE TANGO_008" if com_UV=="CALERA DE TANGO_CALERA"
+replace com_UV ="CALERA DE TANGO_012" if com_UV=="CALERA DE TANGO_COOPERATIVA"
+replace com_UV ="CALERA DE TANGO_005" if com_UV=="CALERA DE TANGO_EL ACACIO"
+replace com_UV ="CALERA DE TANGO_002" if com_UV=="CALERA DE TANGO_EL COPIHUE"
+replace com_UV ="CALERA DE TANGO_011" if com_UV=="CALERA DE TANGO_LO CARVALLO"
+replace com_UV ="CALERA DE TANGO_001" if com_UV=="CALERA DE TANGO_LO HERMITA"
+replace com_UV ="CALERA DE TANGO_016" if com_UV=="CALERA DE TANGO_LOS BAJOS"
+replace com_UV ="CALERA DE TANGO_007" if com_UV=="CALERA DE TANGO_LOS TILOS"
+replace com_UV ="CALERA DE TANGO_015" if com_UV=="CALERA DE TANGO_MUNICIPIO"
+replace com_UV ="CALERA DE TANGO_013" if com_UV=="CALERA DE TANGO_POB. 21 DE MAYO"
+replace com_UV ="CALERA DE TANGO_006" if com_UV=="CALERA DE TANGO_SAN AGUSTIN"
+replace com_UV ="CALERA DE TANGO_004" if com_UV=="CALERA DE TANGO_SAN IGNACIO"
+replace com_UV ="CALERA DE TANGO_010" if com_UV=="CALERA DE TANGO_SANTA INES"
+replace com_UV ="CALERA DE TANGO_009" if com_UV=="CALERA DE TANGO_SANTO DOMINGO"
+replace com_UV ="CALERA DE TANGO_003" if com_UV=="CALERA DE TANGO_TANGUITO"
+replace com_UV ="CALERA DE TANGO_014" if com_UV=="CALERA DE TANGO_VILLA SAN AGUSTIN"
+
+replace com_UV ="COLINA_002" if com_UV=="COLINA_ALGARROBAL"
+replace com_UV ="COLINA_014" if com_UV=="COLINA_ALTO ESMERALDA"
+replace com_UV ="COLINA_016" if com_UV=="COLINA_CHACABUCO"
+replace com_UV ="COLINA_003" if com_UV=="COLINA_CHICUREO"
+replace com_UV ="COLINA_012" if com_UV=="COLINA_COLINA CENTRO"
+replace com_UV ="COLINA_009" if com_UV=="COLINA_COLINA UNO COLINA DOS"
+replace com_UV ="COLINA_001" if com_UV=="COLINA_EL ALBA VALLE HERMOSO"
+replace com_UV ="COLINA_015" if com_UV=="COLINA_ESMERALDA"
+replace com_UV ="COLINA_013" if com_UV=="COLINA_LA REINA"
+replace com_UV ="COLINA_004" if com_UV=="COLINA_LAS BRISAS DE CHICUREO"
+replace com_UV ="COLINA_010" if com_UV=="COLINA_LOS GOBERNADORES GABRIELA MISTRAL NUEVO AMANECER"
+replace com_UV ="COLINA_008" if com_UV=="COLINA_LOS ROBLES LOS ALAMOS"
+replace com_UV ="COLINA_011" if com_UV=="COLINA_LUIS CRUZ MARTINEZ"
+replace com_UV ="COLINA_005" if com_UV=="COLINA_MANUEL RODRIGUEZ"
+replace com_UV ="COLINA_006" if com_UV=="COLINA_SANTA ELENA"
+replace com_UV ="COLINA_007" if com_UV=="COLINA_SANTA FILOMENA"
+
+replace com_UV ="CURACAVI_04" if com_UV=="CURACAVI_ALHUE CAREN OTROS"
+replace com_UV ="CURACAVI_03" if com_UV=="CURACAVI_CHALLACO LAS ROSAS LO AGUILA OTROS"
+replace com_UV ="CURACAVI_10" if com_UV=="CURACAVI_CUYUNCAVI"
+replace com_UV ="CURACAVI_01" if com_UV=="CURACAVI_GERMAN RIESCO"
+replace com_UV ="CURACAVI_07" if com_UV=="CURACAVI_LO ALVARADO"
+replace com_UV ="CURACAVI_06" if com_UV=="CURACAVI_LOLENCO"
+replace com_UV ="CURACAVI_05" if com_UV=="CURACAVI_MIRAFLORES"
+replace com_UV ="CURACAVI_08" if com_UV=="CURACAVI_PATAGUILLA LO PRADO"
+replace com_UV ="CURACAVI_02" if com_UV=="CURACAVI_PUANGUE"
+replace com_UV ="CURACAVI_09" if com_UV=="CURACAVI_WILLIAMS REBOLLEDO"
+
+replace com_UV ="LA GRANJA_1" if com_UV=="LA GRANJA_LAS ACACIAS"
+replace com_UV ="LA GRANJA_9" if com_UV=="LA GRANJA_LAS ENCINAS"
+replace com_UV ="LA GRANJA_2" if com_UV=="LA GRANJA_LOS ALGARROBOS"
+replace com_UV ="LA GRANJA_3" if com_UV=="LA GRANJA_LOS ALMENDROS"
+replace com_UV ="LA GRANJA_4" if com_UV=="LA GRANJA_LOS AROMOS"
+replace com_UV ="LA GRANJA_5" if com_UV=="LA GRANJA_LOS AVELLANOS"
+replace com_UV ="LA GRANJA_6" if com_UV=="LA GRANJA_LOS CASTAÃƒ?OS"
+replace com_UV ="LA GRANJA_7" if com_UV=="LA GRANJA_LOS CEIBOS"
+replace com_UV ="LA GRANJA_8" if com_UV=="LA GRANJA_LOS CIRUELOS"
+replace com_UV ="LA GRANJA_10" if com_UV=="LA GRANJA_LOS FRESNOS"
+replace com_UV ="LA GRANJA_11" if com_UV=="LA GRANJA_LOS JACARANDA"
+replace com_UV ="LA GRANJA_12" if com_UV=="LA GRANJA_LOS MAITENES"
+replace com_UV ="LA GRANJA_13" if com_UV=="LA GRANJA_LOS OLIVOS"
+replace com_UV ="LA GRANJA_14" if com_UV=="LA GRANJA_LOS OLMOS"
+replace com_UV ="LA GRANJA_15" if com_UV=="LA GRANJA_LOS PIMIENTOS"
+replace com_UV ="LA GRANJA_16" if com_UV=="LA GRANJA_LOS PRUNOS"
+replace com_UV ="LA GRANJA_17" if com_UV=="LA GRANJA_LOS TILOS"
+
+replace com_UV ="LAS CONDES_001" if com_UV=="LAS CONDES_C1"
+replace com_UV ="LAS CONDES_010" if com_UV=="LAS CONDES_C10"
+replace com_UV ="LAS CONDES_011" if com_UV=="LAS CONDES_C11"
+replace com_UV ="LAS CONDES_012" if com_UV=="LAS CONDES_C12"
+replace com_UV ="LAS CONDES_013" if com_UV=="LAS CONDES_C13"
+replace com_UV ="LAS CONDES_014" if com_UV=="LAS CONDES_C14"
+replace com_UV ="LAS CONDES_015" if com_UV=="LAS CONDES_C15"
+replace com_UV ="LAS CONDES_016" if com_UV=="LAS CONDES_C16"
+replace com_UV ="LAS CONDES_017" if com_UV=="LAS CONDES_C17"
+replace com_UV ="LAS CONDES_018" if com_UV=="LAS CONDES_C18"
+replace com_UV ="LAS CONDES_019" if com_UV=="LAS CONDES_C19"
+replace com_UV ="LAS CONDES_002" if com_UV=="LAS CONDES_C2"
+replace com_UV ="LAS CONDES_020" if com_UV=="LAS CONDES_C20"
+replace com_UV ="LAS CONDES_021" if com_UV=="LAS CONDES_C21"
+replace com_UV ="LAS CONDES_022" if com_UV=="LAS CONDES_C22"
+replace com_UV ="LAS CONDES_023" if com_UV=="LAS CONDES_C23"
+replace com_UV ="LAS CONDES_024" if com_UV=="LAS CONDES_C24"
+replace com_UV ="LAS CONDES_025" if com_UV=="LAS CONDES_C25"
+replace com_UV ="LAS CONDES_003" if com_UV=="LAS CONDES_C3"
+replace com_UV ="LAS CONDES_004" if com_UV=="LAS CONDES_C4"
+replace com_UV ="LAS CONDES_005" if com_UV=="LAS CONDES_C5"
+replace com_UV ="LAS CONDES_006" if com_UV=="LAS CONDES_C6"
+replace com_UV ="LAS CONDES_007" if com_UV=="LAS CONDES_C7"
+replace com_UV ="LAS CONDES_008" if com_UV=="LAS CONDES_C8"
+replace com_UV ="LAS CONDES_009" if com_UV=="LAS CONDES_C9"
+
+replace com_UV ="PEDRO AGUIRRE CERDA_12-H" if com_UV=="PEDRO AGUIRRE CERDA_ALBERTO RISOPATRON B"
+replace com_UV ="PEDRO AGUIRRE CERDA_15" if com_UV=="PEDRO AGUIRRE CERDA_ANTONIO ACEVEDO H"
+replace com_UV ="PEDRO AGUIRRE CERDA_9" if com_UV=="PEDRO AGUIRRE CERDA_BALMACEDA"
+replace com_UV ="PEDRO AGUIRRE CERDA_7" if com_UV=="PEDRO AGUIRRE CERDA_EL CARMELO"
+replace com_UV ="PEDRO AGUIRRE CERDA_14" if com_UV=="PEDRO AGUIRRE CERDA_EL ESFUERZO"
+replace com_UV ="PEDRO AGUIRRE CERDA_6" if com_UV=="PEDRO AGUIRRE CERDA_EL MIRADOR"
+replace com_UV ="PEDRO AGUIRRE CERDA_32" if com_UV=="PEDRO AGUIRRE CERDA_FRATERNAL FERROVIARIA"
+replace com_UV ="PEDRO AGUIRRE CERDA_11-B" if com_UV=="PEDRO AGUIRRE CERDA_HISTORICA DE CHILE"
+replace com_UV ="PEDRO AGUIRRE CERDA_33" if com_UV=="PEDRO AGUIRRE CERDA_JOSE MARIA CARO"
+replace com_UV ="PEDRO AGUIRRE CERDA_3" if com_UV=="PEDRO AGUIRRE CERDA_LA VICTORIA"
+replace com_UV ="PEDRO AGUIRRE CERDA_11-H" if com_UV=="PEDRO AGUIRRE CERDA_LO VALLEDOR NORTE"
+replace com_UV ="PEDRO AGUIRRE CERDA_28" if com_UV=="PEDRO AGUIRRE CERDA_LO VALLEDOR SUR"
+replace com_UV ="PEDRO AGUIRRE CERDA_1" if com_UV=="PEDRO AGUIRRE CERDA_MIGUEL DAVILA"
+replace com_UV ="PEDRO AGUIRRE CERDA_8H" if com_UV=="PEDRO AGUIRRE CERDA_NUEVA LO VALLEDOR"
+replace com_UV ="PEDRO AGUIRRE CERDA_24" if com_UV=="PEDRO AGUIRRE CERDA_NUEVA SANTA ADRIANA"
+replace com_UV ="PEDRO AGUIRRE CERDA_8" if com_UV=="PEDRO AGUIRRE CERDA_POBLACION ALESSANDRI"
+replace com_UV ="PEDRO AGUIRRE CERDA_4" if com_UV=="PEDRO AGUIRRE CERDA_SAN JOAQUIN PONIENTE"
+replace com_UV ="PEDRO AGUIRRE CERDA_11-A" if com_UV=="PEDRO AGUIRRE CERDA_SAN MIGUEL"
+replace com_UV ="PEDRO AGUIRRE CERDA_34" if com_UV=="PEDRO AGUIRRE CERDA_UNION Y AMISTAD"
+replace com_UV ="PEDRO AGUIRRE CERDA_13" if com_UV=="PEDRO AGUIRRE CERDA_UNION Y ESFUERZO"
+replace com_UV ="PEDRO AGUIRRE CERDA_10" if com_UV=="PEDRO AGUIRRE CERDA_UNIVERSIDAD DE CHILE"
+replace com_UV ="PEDRO AGUIRRE CERDA_12" if com_UV=="PEDRO AGUIRRE CERDA_VILLA CENTENARIO"
+replace com_UV ="PEDRO AGUIRRE CERDA_16" if com_UV=="PEDRO AGUIRRE CERDA_VILLA MANUEL RODRIGUEZ"
+replace com_UV ="PEDRO AGUIRRE CERDA_3-A" if com_UV=="PEDRO AGUIRRE CERDA_VILLA NUEVA ESPERANZA"
+replace com_UV ="PEDRO AGUIRRE CERDA_5" if com_UV=="PEDRO AGUIRRE CERDA_VILLA NUMANCIA"
+replace com_UV ="PEDRO AGUIRRE CERDA_2" if com_UV=="PEDRO AGUIRRE CERDA_VILLA SUR 1"
+replace com_UV ="PEDRO AGUIRRE CERDA_27" if com_UV=="PEDRO AGUIRRE CERDA_VILLA SUR 2"
+
+replace com_UV ="PIRQUE_4" if com_UV=="PIRQUE_CONCHA Y TORO"
+replace com_UV ="PIRQUE_11" if com_UV=="PIRQUE_EL BOSQUE"
+replace com_UV ="PIRQUE_6" if com_UV=="PIRQUE_EL PRINCIPAL"
+replace com_UV ="PIRQUE_8" if com_UV=="PIRQUE_LA CATOLICA"
+replace com_UV ="PIRQUE_5" if com_UV=="PIRQUE_LO ARCAYA"
+replace com_UV ="PIRQUE_9" if com_UV=="PIRQUE_ORILLA DEL RIO"
+replace com_UV ="PIRQUE_2" if com_UV=="PIRQUE_PUNTILLA"
+replace com_UV ="PIRQUE_1" if com_UV=="PIRQUE_SAN JUAN"
+replace com_UV ="PIRQUE_10" if com_UV=="PIRQUE_SAN RAMON"
+replace com_UV ="PIRQUE_7" if com_UV=="PIRQUE_SAN VICENTE"
+replace com_UV ="PIRQUE_3" if com_UV=="PIRQUE_SANTA RITA"
+
+replace com_UV ="SAN JOSE DE MAIPO_16R" if com_UV=="SAN JOSE DE MAIPO_BANOS MORALES"
+replace com_UV ="SAN JOSE DE MAIPO_8" if com_UV=="SAN JOSE DE MAIPO_CLAUDIO ARRAU EL ESFUERZO VILLA ESTACION"
+replace com_UV ="SAN JOSE DE MAIPO_3" if com_UV=="SAN JOSE DE MAIPO_EL CANELO"
+replace com_UV ="SAN JOSE DE MAIPO_13R" if com_UV=="SAN JOSE DE MAIPO_EL INGENIO SAN GABRIEL"
+replace com_UV ="SAN JOSE DE MAIPO_4" if com_UV=="SAN JOSE DE MAIPO_EL MANZANO"
+replace com_UV ="SAN JOSE DE MAIPO_11" if com_UV=="SAN JOSE DE MAIPO_EL MELOCOTON"
+replace com_UV ="SAN JOSE DE MAIPO_10R" if com_UV=="SAN JOSE DE MAIPO_EL TOYO LAS ARANAS SAN JOSE ALTO"
+replace com_UV ="SAN JOSE DE MAIPO_15R" if com_UV=="SAN JOSE DE MAIPO_EL VOLCAN"
+replace com_UV ="SAN JOSE DE MAIPO_6" if com_UV=="SAN JOSE DE MAIPO_GUAYACAN"
+replace com_UV ="SAN JOSE DE MAIPO_1" if com_UV=="SAN JOSE DE MAIPO_LA OBRA"
+replace com_UV ="SAN JOSE DE MAIPO_2" if com_UV=="SAN JOSE DE MAIPO_LAS VERTIENTES"
+replace com_UV ="SAN JOSE DE MAIPO_14" if com_UV=="SAN JOSE DE MAIPO_LOS CHACAYES"
+replace com_UV ="SAN JOSE DE MAIPO_5R" if com_UV=="SAN JOSE DE MAIPO_LOS MAITENES"
+replace com_UV ="SAN JOSE DE MAIPO_12" if com_UV=="SAN JOSE DE MAIPO_SAN ALFONSO"
+replace com_UV ="SAN JOSE DE MAIPO_9" if com_UV=="SAN JOSE DE MAIPO_SAN JOSE DE MAIPO"
+replace com_UV ="SAN JOSE DE MAIPO_7" if com_UV=="SAN JOSE DE MAIPO_VICTORIA"
+
+replace com_UV ="SAN PEDRO_3" if com_UV=="SAN PEDRO_EL PRADO"
+replace com_UV ="SAN PEDRO_5" if com_UV=="SAN PEDRO_LOICA"
+replace com_UV ="SAN PEDRO_6" if com_UV=="SAN PEDRO_LONGOVILO"
+replace com_UV ="SAN PEDRO_4" if com_UV=="SAN PEDRO_NIHUE"
+replace com_UV ="SAN PEDRO_2" if com_UV=="SAN PEDRO_QUINCAHUE"
+replace com_UV ="SAN PEDRO_1" if com_UV=="SAN PEDRO_SAN PEDRO"
+
+replace com_UV ="TIL TIL_1" if com_UV=="TILTIL_1"
+replace com_UV ="TIL TIL_2" if com_UV=="TILTIL_2"
+replace com_UV ="TIL TIL_3" if com_UV=="TILTIL_3"
+replace com_UV ="TIL TIL_4" if com_UV=="TILTIL_4"
+replace com_UV ="TIL TIL_5" if com_UV=="TILTIL_5"
+replace com_UV ="TIL TIL_6" if com_UV=="TILTIL_6"
+replace com_UV ="TIL TIL_7" if com_UV=="TILTIL_7"
+replace com_UV ="TIL TIL_8" if com_UV=="TILTIL_8"
+
+save "RSH_AMS_Hogares.dta", replace
+export delimited using "RSH_AMS_Hogares.csv", replace
